@@ -13,7 +13,7 @@ form.addEventListener("submit", async (e) => {
     domain: select.value
   };
 
-  const response = awaitfetch("https://intership-d8m7.onrender.com/register", {
+  const response = await fetch("https://intership-d8m7.onrender.com/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
