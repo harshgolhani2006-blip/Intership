@@ -75,7 +75,7 @@ volunteerForm.addEventListener("submit", async (e) => {
         };
 
         const response = await fetch(
-            "https://intership-s66q.onrender.com",
+            "https://intership-s66q.onrender.com/register",
             {
                 method: "POST",
                 headers: {
