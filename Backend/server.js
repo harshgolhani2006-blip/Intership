@@ -20,7 +20,7 @@ fs.writeFileSync(FILE, JSON.stringify([]));
 
 app.post("/register", (req, res) => {
 
-```
+
 const data = JSON.parse(
     fs.readFileSync(FILE, "utf-8")
 );
@@ -45,7 +45,7 @@ res.status(201).json({
     message: "Volunteer Registered Successfully",
     volunteer
 });
-```
+
 
 });
 
@@ -55,13 +55,13 @@ res.status(201).json({
 
 app.get("/volunteers", (req, res) => {
 
-```
+
 const data = JSON.parse(
     fs.readFileSync(FILE, "utf-8")
 );
 
 res.json(data);
-```
+
 
 });
 
@@ -71,7 +71,6 @@ res.json(data);
 
 app.delete("/volunteers/:id", (req, res) => {
 
-```
 const id = Number(req.params.id);
 
 let data = JSON.parse(
@@ -102,7 +101,6 @@ res.json({
     success: true,
     message: "Volunteer Deleted Successfully"
 });
-```
 
 });
 
