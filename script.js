@@ -132,5 +132,3 @@ contactForm.addEventListener("submit", (e) => {
 });
 
 }
-
-
